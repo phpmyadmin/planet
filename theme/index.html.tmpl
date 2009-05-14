@@ -1,28 +1,40 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-### Fancy Planet HTML template.
-### 
-### When combined with the stylesheet and images in the output/ directory
-### of the Planet source, this gives you a much prettier result than the
-### default examples template and demonstrates how to use the config file
-### to support things like faces
-### 
-### For documentation on the more boring template elements, see
-### examples/config.ini and examples/index.html.tmpl in the Planet source.
+ <head profile="http://purl.org/uF/2008/03/ http://purl.org/uF/hAtom/0.1/">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
+  <meta name="author" content="phpMyAdmin devel team" />
+  <meta name="copyright" content="Copyright &copy; 2003 - 2009 phpMyAdmin devel team" />
+  <title><TMPL_VAR name></title>
+  <TMPL_IF feedtype>
+  <link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
+  </TMPL_IF>
+  <link rel="stylesheet" type="text/css" href="http://www.phpmyadmin.net/home_page/css/style.css" />
+  <link rel="shortcut icon" href="http://www.phpmyadmin.net/home_page/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="http://www.phpmyadmin.net/home_page/favicon.ico" type="image/x-icon" />
+  <meta name="verify-v1" content="3AM2eNj0zQ1Ao/N2eGE02S45V3p5KQxAyMIxdUJhtEQ=" />
+  <meta name="robots" content="index, follow" />
+ </head>
+ <body>
+  <div id="header">
+   <h1>Planet <a href="http://www.phpmyadmin.net/" rel="home">php<span class="myadmin">MyAdmin</span></a></h1>
+   <ul id="links">
+     <li><a href="/home_page/">About</a></li>
+     <li><a href="/home_page/news.php">News</a></li>
+     <li><a href="/home_page/security/">Security</a></li>
 
-<head>
-<title><TMPL_VAR name></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
-<link rel="stylesheet" href="planet.css" type="text/css">
-<TMPL_IF feedtype>
-<link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
-</TMPL_IF>
-</head>
+     <li><a href="/home_page/support.php">Support</a></li>
+     <li><a href="/home_page/docs.php">Docs</a></li>
+     <li><a href="/home_page/try.php">Try</a></li>
+     <li><a href="/home_page/improve.php">Improve</a></li>
+     <li><a href="/home_page/themes.php">Themes</a></li>
+     <li><a href="/home_page/downloads.php">Download</a></li>
 
-<body>
-<h1><TMPL_VAR name></h1>
+   </ul>
+  </div>
+
+<div id="body" class="planet">
 <TMPL_VAR admin>
 
 <TMPL_LOOP Items>
@@ -85,12 +97,13 @@
 </div>
 </TMPL_IF>
 </TMPL_LOOP>
+### End if id=body
+</div>
 
 
 <div class="sidebar">
-<img src="images/logo.png" width="136" height="136" alt="">
 
-<h2>Subscriptions</h2>
+<h3>Subscriptions</h3>
 <ul>
 <TMPL_LOOP Channels>
 <li>
@@ -99,8 +112,8 @@
 </TMPL_LOOP>
 </ul>
 
+<h3>Last updated</h3>
 <p>
-<strong>Last updated:</strong><br>
 <TMPL_VAR date><br>
 <em>All times are UTC.</em><br>
 <br>
@@ -108,8 +121,8 @@ Powered by:<br>
 <a href="http://www.planetplanet.org/"><img src="images/planet.png" width="80" height="15" alt="Planet" border="0"></a>
 </p>
 
+<h3>Planetarium</h3>
 <p>
-<h2>Planetarium:</h2>
 <ul>
 <li><a href="http://www.planetapache.org/">Planet Apache</a></li>
 <li><a href="http://planet.debian.net/">Planet Debian</a></li>
@@ -121,6 +134,24 @@ Powered by:<br>
 </ul>
 </p>
 </div>
-</body>
-
+  <ul id="footer">
+    <li>Copyright &copy; 2003 - 2009 <span class="vcard"><a class="url org fn" href="http://www.phpmyadmin.net/home_page/team.php">phpMyAdmin devel team</a><a href="mailto:phpmyadmin-devel@lists.sourceforge.net" class="email"></a></span></li>
+    <li><a href="http://www.phpmyadmin.net/home_page/license.php" rel="license">License</a></li>
+    <li><a href="http://www.phpmyadmin.net/home_page/donate.php" rel="payment" title="Support phpMyAdmin by donating money!">Donate</a></li>
+    <li><a href="http://www.phpmyadmin.net/home_page/sitemap.php" rel="contents">Sitemap</a></li>
+    <li><a href="http://www.phpmyadmin.net/home_page/search.php" title="Search for phpMyAdmin related questions">Search</a></li>
+    <li><a href="http://www.phpmyadmin.net/home_page/about-website.php" title="Information about website">About</a></li>
+    <li class="last">Valid <a href="http://validator.w3.org/check/referer">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></li>
+    <li class="logo"><a href="http://sourceforge.net/projects/phpmyadmin"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=23067&amp;type=10" width="80" height="15" alt="Get phpMyAdmin at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a></li>
+  </ul>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2718724-14");
+pageTracker._trackPageview();
+</script>
+ </body>
 </html>
+
