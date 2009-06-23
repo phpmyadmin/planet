@@ -176,6 +176,18 @@ try {
 var pageTracker = _gat._getTracker("UA-2718724-15");
 pageTracker._trackPageview();
 } catch(err) {}</script>
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.cihar.com/" : "http://stats.cihar.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<!-- End Piwik Tag -->
  </body>
 </html>
 
