@@ -2,7 +2,7 @@ Planet phpMyAdmin
 =================
 
 This directory contains configuration for Planet phpMyAdmin. It is currently
-run at http://pmaplanet.cihar.com and aggregates blogs of phpMyAdmin
+run at http://planet.phpmyadmin.net/ and aggregates blogs of phpMyAdmin
 contributors.
 
 It uses software called Planet Venus [1], to generate website, just run it
