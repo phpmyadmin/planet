@@ -7,10 +7,8 @@ contributors.
 
 It uses software called Planet Venus <http://www.intertwingly.net/code/venus/>,
 to generate website, just run it with configuration file placed in this
-directory:
+directory::
 
-``
-planet --verbose planet.ini
-``
+    planet --verbose planet.ini
 
 If you want to change look, you need to change template theme/index.html.tmpl.
