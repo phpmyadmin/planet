@@ -17,22 +17,15 @@
   <meta name="robots" content="index, follow" />
  </head>
  <body>
-  <div id="header">
-   <h1>Planet <a href="http://www.phpmyadmin.net/" rel="home">php<span class="myadmin">MyAdmin</span></a></h1>
-   <ul id="links">
-     <li><a href="http://www.phpmyadmin.net/home_page/">About</a></li>
-     <li><a href="http://www.phpmyadmin.net/home_page/news.php">News</a></li>
-     <li><a href="http://www.phpmyadmin.net/home_page/security/">Security</a></li>
-
-     <li><a href="http://www.phpmyadmin.net/home_page/support.php">Support</a></li>
-     <li><a href="http://www.phpmyadmin.net/home_page/docs.php">Docs</a></li>
-     <li><a href="http://www.phpmyadmin.net/home_page/try.php">Try</a></li>
-     <li><a href="http://www.phpmyadmin.net/home_page/improve.php">Contribute</a></li>
-     <li><a href="http://www.phpmyadmin.net/home_page/themes.php">Themes</a></li>
-     <li><a href="http://www.phpmyadmin.net/home_page/downloads.php">Download</a></li>
-
-   </ul>
-  </div>
+    <header>
+   <nav>
+   <div class="menu">
+   <a href="/home_page/" class="active">Home</a><a href="/home_page/news.php">News</a><a href="/home_page/security/">Security</a><a href="/home_page/support.php">Support</a><a href="/home_page/docs.php">Docs</a><a href="/home_page/try.php">Try</a><a href="/home_page/improve.php">Contribute</a><a href="/home_page/contest.php">Contest</a><a href="/home_page/sponsors.php">Sponsors</a><a href="/home_page/themes.php">Themes</a><a href="/home_page/downloads.php">Download</a>
+   </div>
+   <div class="clearer"></div>
+   </nav>
+    <h1><a href="/home_page/" rel="home"><span id="logo">phpMyAdmin</span></a> Planet phpMyAdmin</h1>
+  </header>
 
 <div id="body" class="planet">
 <TMPL_VAR admin>
