@@ -12,8 +12,7 @@
   <TMPL_IF feedtype>
   <link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml" />
   </TMPL_IF>
-  <link rel="stylesheet" type="text/css" href="https://www.phpmyadmin.net/static/bootstrap/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="https://www.phpmyadmin.net/static/bootstrap/css/bootstrap-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.phpmyadmin.net/static/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="https://www.phpmyadmin.net/static/css/style.css" />
   <link rel="stylesheet" type="text/css" href="https://www.phpmyadmin.net/static/colorbox/colorbox.css" />
   <link rel="stylesheet" type="text/css" href="https://www.phpmyadmin.net/static/css/font-awesome.min.css">
@@ -29,49 +28,63 @@
  </head>
  <body>
  <header>
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.phpmyadmin.net/">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/news/">News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/security/">Security</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/support/">Support</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/docs/">Docs</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/try/">Try</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/contribute/">Contribute</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/sponsors/">Sponsors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/themes/">Themes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.phpmyadmin.net/downloads/">Download</a>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav mr-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/phpmyadmin/phpmyadmin" title="phpMyAdmin is developed on GitHub"><i class="fa fa-github"></i> GitHub</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-
-   
-   <li><a href="https://www.phpmyadmin.net/">Home</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/news/">News</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/security/">Security</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/support/">Support</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/docs/">Docs</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/try/">Try</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/contribute/">Contribute</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/sponsors/">Sponsors</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/themes/">Themes</a></li>
-   
-   <li ><a href="https://www.phpmyadmin.net/downloads/">Download</a></li>
-   
-      </ul>
-       <ul class="nav navbar-nav navbar-right">
-         <li><a href="https://github.com/phpmyadmin/phpmyadmin" title="phpMyAdmin is developed on GitHub"><i class="fa fa-github"></i> GitHub</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
   </nav>
 
   <div class="container">
@@ -82,12 +95,12 @@
   <div class="col-sm-3 boxes">
 
     <a class="btn btn-success" href="https://www.phpmyadmin.net/downloads/"><i class="fa fa-download"></i> Download</a>
-    
+
     <a class="btn btn-success" href="https://demo.phpmyadmin.net/master-config/" title="Go to demo server"><i class="fa fa-search"></i> Try demo</a>
 
     <a class="btn btn-success" href="https://www.phpmyadmin.net/donate/" rel="payment"><i class="fa fa-credit-card"></i> Donate</a>
 
-    
+
     </div>
   </div>
   </div>
